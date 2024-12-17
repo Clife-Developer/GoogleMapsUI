@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
     this.pin= { position, label };
   }
 
-  showDetails(marker: any): void {
-    alert(`lng: ${marker.position.lng}, lat: ${marker.position.lat}`);
+  showDetails(pin: any): void {
+    alert(`lng: ${pin.position.lng}, lat: ${pin.position.lat}`);
   }
 }
