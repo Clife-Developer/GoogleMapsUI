@@ -1,0 +1,15 @@
+<div style="height: 100vh; width: 100%;">
+  <google-map
+    height="100%"
+    width="100%"
+    [center]="center"
+    [zoom]="zoom"
+    (mapClick)="clickOnMap($event)">
+    <map-marker
+      [position]="pin.position"
+      [label]="pin.label"
+      (mapClick)="showDetails(pin)">
+    </map-marker>
+  </google-map>
+</div>
+<input type="text" id="autocomplete" (keyup.enter)="autocomplete()" placeholder="Search" />
